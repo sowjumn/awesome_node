@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Practising CSS selectors</title>
+    <style>
+      p {
+
+      }
+      .blue {
+
+      }
+      .under {
+
+      }
+      .highlight {
+
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
-  
   <body>
-    <h1>Awesome Sauce</h1>
+    <p class="blue under">First</p>
+    <p class="blue under">Second</p>
+    <p class="blue under">Third</p>
+    <p class="blue under">Fourth</p>
+    <script>
+      $('p:even').removeClass("blue");
+      $('p:odd').removeClass("blue under");
+    </script>
   </body>
 </html>
